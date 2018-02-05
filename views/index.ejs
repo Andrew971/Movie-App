@@ -8,14 +8,26 @@
 </head>
 
 <body>
-    <h1>Hello movies!</h1>
-    <%= movies[1].title %>
-        
-        <%= movies[0].plot %>
-        <br/>
-        <!-- <% for (let i = 0; i < movies.length; i++) { %>
-            <%= return movies[i].tittle %>
-        <% }; %> -->
+    <div class="container">
+        <h1>Hello movies!</h1>
+        <div class="row">
+            <div class="col"> <ul class="list-unstyled">
+                <% for(var i=0; i<movies.length; i++) {%>
+                    <li class="media">
+                        <img class="mr-3" src="<%= movies[i].img %>" alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">
+                                <%= movies[i].title %>
+                            </h5>
+                            <%= movies[i].plot %>
+                        </div>
+                    </li>
+
+                    <% } %>
+                        </ul>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

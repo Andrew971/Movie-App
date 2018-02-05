@@ -3,10 +3,16 @@ const app = express();
 const port = process.argv[2] || 8080;
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
+
 app.get('/', (req, res) => {
   res.render('index', { movies: getMovies() });
 });
 
+
+app.get('/movie/:movieId', (req, res) => {
+  
+  res.send(req.params.movieId);
+});
 
 function getMovies() {
   return [
@@ -22,7 +28,8 @@ function getMovies() {
       actors: 'Harrison Ford, Rutger Hauer, Sean Young, Edward James Olmos',
       plot: 'A blade runner must pursue and try to terminate four replicants who stole a ship in space and have returned to Earth to find their creator.',
       language: 'English',
-      country: 'USA, Hong Kong'
+      country: 'USA, Hong Kong',
+      img: '/img/movie-img.jpg'
     },
     {
       title: 'Blade Runner1',
@@ -36,7 +43,8 @@ function getMovies() {
       actors: 'Harrison Ford, Rutger Hauer, Sean Young, Edward James Olmos',
       plot: 'A blade runner must pursue and try to terminate four replicants who stole a ship in space and have returned to Earth to find their creator.',
       language: 'English',
-      country: 'USA, Hong Kong'
+      country: 'USA, Hong Kong',
+      img: '/img/movie-img.jpg'
     }
   ]
 }
