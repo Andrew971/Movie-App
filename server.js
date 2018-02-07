@@ -11,21 +11,8 @@ app.get('/', (req, res) => {
 
 
 app.get('/movie/:movieId', (req, res,) => {
-  // function NoMovie() {
-  //   for (i = 0; i < movie.length; i++) {
-  //     if (movie[i].id !== id) {
-  //       return res.redirect('/'); 
-  //     } else {
-  //       return 
-
-  //     }
-  //   }}
-  
   let movie = getMovies();
   let id = req.params.movieId
-  
-  // NoMovie()
-
 
   res.render('movie', { movie: getMovies(), id})
 })
@@ -37,7 +24,6 @@ app.get('/search', (req, res) => {
     return movie.title.toUpperCase().includes(search);
   });
   function  NoMovie() {
-
     if(results.length == 0){
       return "No movies found"
     } else {

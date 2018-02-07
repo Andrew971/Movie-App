@@ -1,0 +1,35 @@
+<div class="container">
+        <a class="btn btn-primary" href="/" role="button">Back to Index</a>
+
+    <h1>Hello movies!</h1>
+    <form action='/search' method='GET'>
+        <input name='searchTerm' />
+        <button type='submit'>Search</button>
+    </form>
+    <%= message %>
+
+    <div class="row">
+        <div class="col">
+            <ul class="list-unstyled">
+                <% for(var i=0; i<movies.length; i++) {%>
+                    
+                    <li class="media">
+                        <a href="/movie/<%= movies[i].id %>">
+                            <img class="mr-3" src="<%= movies[i].img %>" alt="Generic placeholder image">
+                        </a>
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">
+                                <%= movies[i].title %>
+                            </h5>
+                            <%= movies[i].plot %>
+                        </div>
+                    </li>
+
+                    <% } %>
+            </ul>
+
+
+        </div>
+    </div>
+  
+</div>
