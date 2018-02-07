@@ -10,23 +10,33 @@
 <body>
     <div class="container">
         <h1>Hello movies!</h1>
+        <form action='/search' method='GET'>
+            <input name='searchTerm' />
+            <button type='submit'>Search</button>
+        </form>
         <div class="row">
-            <div class="col"> <ul class="list-unstyled">
-                <% for(var i=0; i<movies.length; i++) {%>
-                    <li class="media">
-                        <img class="mr-3" src="<%= movies[i].img %>" alt="Generic placeholder image">
-                        <div class="media-body">
-                            <h5 class="mt-0 mb-1">
-                                <%= movies[i].title %>
-                            </h5>
-                            <%= movies[i].plot %>
-                        </div>
-                    </li>
+            <div class="col">
+                <ul class="list-unstyled">
+                    <% for(var i=0; i<movies.length; i++) {%>
+                        <li class="media">
+                            <a href="/movie/<%= movies[i].id %>">
+                                <img class="mr-3" src="<%= movies[i].img %>" alt="Generic placeholder image">
+                            </a>
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1">
+                                    <%= movies[i].title %>
+                                </h5>
+                                <%= movies[i].plot %>
+                            </div>
+                        </li>
 
-                    <% } %>
-                        </ul>
+                        <% } %>
+                </ul>
+
+
             </div>
         </div>
+      
     </div>
 </body>
 
