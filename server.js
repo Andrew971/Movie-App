@@ -10,11 +10,24 @@ app.get('/', (req, res) => {
 });
 
 
-app.get('/movie/:movieId', (req, res) => {
+app.get('/movie/:movieId', (req, res,) => {
+  // function NoMovie() {
+  //   for (i = 0; i < movie.length; i++) {
+  //     if (movie[i].id !== id) {
+  //       return res.redirect('/'); 
+  //     } else {
+  //       return 
+
+  //     }
+  //   }}
+  
   let movie = getMovies();
   let id = req.params.movieId
-  // res.send(movie[id])
-  res.render('movie', { movie: getMovies(), id })
+  
+  // NoMovie()
+
+
+  res.render('movie', { movie: getMovies(), id})
 })
 
 app.get('/search', (req, res) => {
@@ -32,7 +45,6 @@ app.get('/search', (req, res) => {
     }
   }
 let message = NoMovie()
-  console.log(results)
     res.render('index', { movies:results, message });
 })
 
@@ -86,7 +98,7 @@ function getMovies() {
         language: 'English',
         country: 'USA, Hong Kong',
         img: '/img/movie-img.jpg',
-        id: '1'
+        id: '2'
       }
     ]
   }
