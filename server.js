@@ -5,7 +5,8 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-  res.render('index', { movies: getMovies() });
+  let message="";
+  res.render('index', { movies: getMovies(), message });
 });
 
 
@@ -22,10 +23,19 @@ app.get('/search', (req, res) => {
   let results= movies.filter((movie) => {
     return movie.title.toUpperCase().includes(search);
   });
+  function  NoMovie() {
 
-  res.render('index', { movies:results });
-
+    if(results.length == 0){
+      return "No movies found"
+    } else {
+      return ""
+    }
+  }
+let message = NoMovie()
+  console.log(results)
+    res.render('index', { movies:results, message });
 })
+
 
 
 function getMovies() {
