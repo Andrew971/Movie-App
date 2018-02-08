@@ -1,22 +1,17 @@
 <html>
 
 <head>
-    <title>Home</title>
-    <link rel="stylesheet" href="/styles.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <%- include partials/basic/head %>
+
 
 </head>
 
 <body>
-    <div class="container">
-            <a class="btn btn-primary" href="/" role="button">Back to Index</a>
-        <h1>Hello movies!</h1>
-        
-        <%= movie[id].title %><br />
-        <img class="mr-3" src="<%= movie[id].img %>" alt="Generic placeholder image"/><br />
-        <%= movie[id].plot %>
-
-    </div>
+        <%- include partials/basic/nav %>
+        <%- include partials/basic/header %>
+        <%- include partials/basic/main-movie %>
+        <%- include partials/basic/footer %>
+   
 </body>
 
 </html>
