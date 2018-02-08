@@ -1,7 +1,7 @@
 <div class="container">
-    
+    <% console.log(movie) %>
     <%= movie.title %><br />
-    <img class="mr-3" src="<%= movie.img %>" alt="Generic placeholder image"/><br />
-    <%= movie.plot %>
+    <img class="mr-3" src="https://image.tmdb.org/t/p/w500/<%= movie.poster_path %>" alt="Generic placeholder image"/><br />
+    <%= movie.overview %>
 
 </div>
