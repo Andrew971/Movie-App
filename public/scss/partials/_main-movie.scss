@@ -1,0 +1,74 @@
+.movie-title{
+    font-size: 2rem;
+    text-shadow: 1px 3px 60px rgb(223, 242, 255);
+  }
+  .box1{
+    padding:5rem;
+    // margin: 5rem 0;
+}
+.col-md-6.bio-grid-left {
+    width: 50%;
+    float: left;
+    /*display:inline-block;*/
+}
+.col-md-6.bio-grid-right{
+    width: 50%;
+    /*float: right;*/
+    /*display:inline-block;*/
+
+}
+.bio-img {
+    text-align: center;
+    border: 5px solid rgba(238, 238, 238, 0.53);
+    height: auto;
+    padding: 2rem;
+
+}
+.bio-text{
+    text-align: center;
+    margin: 2rem;
+}
+
+
+.bio-grids {
+    padding: 5em 0 0 0;
+}
+.bio-img img {
+    width: 100%;
+   
+}
+
+
+.bio-text p {
+    width: 100%;
+}
+.bio-img h3 {
+    color: black;
+    font-size: 2.8em;
+    font-weight: 600;
+    text-transform: uppercase;
+        letter-spacing:1px;
+   font-family: 'Raleway', sans-serif;
+}
+.bio-img p {
+    color: #ffc53e;
+    font-size: 1em;
+    line-height: 1.5em;
+    text-transform: uppercase;
+	letter-spacing: 2px;
+}
+.bio-grid-right h3 {
+  font-size: 3em;
+    color: black;
+    letter-spacing: 2px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.bio-grid-right p {
+    color: black;
+    font-size: 1em;
+    line-height: 1.8em;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+
