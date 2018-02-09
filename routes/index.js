@@ -41,7 +41,9 @@ request('https://api.themoviedb.org/3/discover/movie?api_key=c254f174e3ef7bd559e
     }
     let message = NoMovie()
     res.render('index', { movies: results, 
-      message: message });
+      message: message,
+      results:results
+     });
   })
 
 
