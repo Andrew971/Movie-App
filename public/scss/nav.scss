@@ -7,59 +7,97 @@
     top:0;
 }
 
+//Code for the title of the website
 
-.menu{
+.title{
     display:inline-block;
-    right:0;
+
+    margin:1rem;
 }
 
-.link {
-    text-decoration: none;
-    color: white;
-    text-align: center;
-    font-size:1.9em;
+.brand_name{
+    color:white;
+    text-decoration:none;
+    font-size:2.2em;
+    text-transform: uppercase;
+   
+ }
+
+ .brand_name:hover{
+     text-decoration:none;
+     color:white;
+ }
+
+//code for the search bar
+
+#search-input {
+    display: inline-block;
+    margin-top: 1em;
+    width:30rem;
 }
-.link:hover{
-    text-decoration: none;
-    color: black;
-}
 
-
-
-#custom-search-form {
-    margin:0;
-    margin-top: 5px;
-    padding: 0;
-}
-
-#custom-search-form .search-query {
+#search-input .search-query {
     padding-right: 3px;
     padding-right: 4px \9;
     padding-left: 3px;
     padding-left: 4px \9;
-    /* IE7-8 doesn't have border-radius, so don't indent the padding */
-
     margin-bottom: 0;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
 }
 
-#custom-search-form button {
-    border: 0;
+#search-input button {
+    border:0;
     background: none;
-    /** belows styles are working good */
     padding: 2px 5px;
     margin-top: 2px;
     position: relative;
-    left: -28px;
-    /* IE7-8 doesn't have border-radius, so don't indent the padding */
+    left: -40px;
     margin-bottom: 0;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
+    color:#D9230F;
 }
 
-.search-query:focus + button {
-    z-index: 3;   
-}
+
+//code for the menu (if menu)
+
+// .dropdown_content_lg{
+//     display: inline-block;
+//     right:0;
+// }
+
+// .menu{
+// float:right
+// }
+// li {
+//     display: inline-block;
+
+// }
+// .menu:hover{
+//     background-color: skyblue;
+//     text-decoration: none;
+//     color: white;
+//     height:100%;
+
+// }
+// ul{
+//     margin:1em;
+//     padding:0;
+//     height: auto;
+// }
+
+
+// .link {
+//     text-decoration: none;
+//     color: white;
+//     text-align: center;
+//     font-size:1.9em;
+// }
+
+// .link:hover{
+//     text-decoration: none;
+//     color: white;
+// }

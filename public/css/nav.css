@@ -6,49 +6,44 @@
   position: absolute;
   top: 0; }
 
-.menu {
+.title {
   display: inline-block;
-  right: 0; }
+  margin: 1rem; }
 
-.link {
-  text-decoration: none;
+.brand_name {
   color: white;
-  text-align: center;
-  font-size: 1.9em; }
-
-.link:hover {
   text-decoration: none;
-  color: black; }
+  font-size: 2.2em;
+  text-transform: uppercase; }
 
-#custom-search-form {
-  margin: 0;
-  margin-top: 5px;
-  padding: 0; }
+.brand_name:hover {
+  text-decoration: none;
+  color: white; }
 
-#custom-search-form .search-query {
+#search-input {
+  display: inline-block;
+  margin-top: 1em;
+  width: 30rem; }
+
+#search-input .search-query {
   padding-right: 3px;
   padding-right: 4px \9;
   padding-left: 3px;
   padding-left: 4px \9;
-  /* IE7-8 doesn't have border-radius, so don't indent the padding */
   margin-bottom: 0;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px; }
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px; }
 
-#custom-search-form button {
+#search-input button {
   border: 0;
   background: none;
-  /** belows styles are working good */
   padding: 2px 5px;
   margin-top: 2px;
   position: relative;
-  left: -28px;
-  /* IE7-8 doesn't have border-radius, so don't indent the padding */
+  left: -40px;
   margin-bottom: 0;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
-  border-radius: 3px; }
-
-.search-query:focus + button {
-  z-index: 3; }
+  border-radius: 3px;
+  color: #D9230F; }
