@@ -1,34 +1,27 @@
-<div class="container">
-        
-    <form action='/search' method='GET'>
-        <input name='searchTerm' />
-        <button type='submit'>Search</button>
-    </form>
 
+<div class="container">
     <%= message %>
 
-    <div class="row">
-        <div class="col">
-            <ul class="list-unstyled">
-                <% movies.forEach((movie)=>{%>
-                    
-                    <li class="media">
-                        <a href="/movie/<%= movie.id %>">
-                            <img class="mr-3" src="https://image.tmdb.org/t/p/w500/<%= movie.backdrop_path %>" alt="Generic placeholder image" />
-                       
-                        <div class="media-body">
-                            <h5 class="mt-0 mb-1">
-                                <%= movie.title %>
-                            </h5> </a>
-                            <%= movie.overview %>
+        <div class="row">
+            <div class="col">
+                <ul class="list-unstyled">
+                    <% movies.forEach((movie)=>{%>
+                        <div class="col-2 col-md-4 col-lg-4" <li class="media">
+                            <a href="/movie/<%= movie.id %>">
+                                <img class="mr-3" src="https://image.tmdb.org/t/p/w500/<%= movie.backdrop_path %>" alt="Generic placeholder image" />
+
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-1">
+                                        <%= movie.title %>
+                                    </h5>
+                            </a>
+                                </div>
+                                </li>
                         </div>
-                    </li>
-
-                    <% }) %>
-            </ul>
+                        <% }) %>
+                </ul>
 
 
+            </div>
         </div>
     </div>
-  
-</div>
