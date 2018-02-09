@@ -1,6 +1,24 @@
-<div class="container">
-    <%= movie.title %><br />
-    <img class="mr-3" src="https://image.tmdb.org/t/p/w500/<%= movie.poster_path %>" alt="Generic placeholder image"/><br />
-    <%= movie.overview %>
-
-</div>
+<section class="container box1" align="center">
+    <div class="row bio-grids">
+        <div class="col-12 col-sm-12 col-md-6 bio-grid-left">
+            <div class="bio-img">
+                    <h3 class="movie-title">
+                            <%= movie.title %>
+                        </h3>
+                <img src="https://image.tmdb.org/t/p/w500/<%= movie.poster_path %>" alt="img">
+                
+            </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 bio-grid-right">
+            <div class="bio-text">
+                <h3>Synopsy</h3>
+                <p>
+                    <%= movie.overview %>
+                </p>
+                Release date: <%= movie.release_date %>
+            </div>
+            
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</section>
