@@ -2,28 +2,26 @@
     <div class="message" align="center">
         <%= message %>
     </div>
-    <%= movies.length %>
+    <div class="row">
+        <ul class="list-unstyled">
+            <% movies.forEach((movie)=>{%>
+                <div class="movies-box">
+                    <div class="col-4 col-md-4 col-lg-3" align="center">
+                        <li class="media">
+                            <a href="/movie/<%= movie.id %>">
+                                <img class="mr-3" src="https://image.tmdb.org/t/p/w500/<%= movie.backdrop_path %>" alt="Generic placeholder image" />
+                            </a>
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1">
+                                    <%= movie.title %>
+                                </h5>
 
-        <div class="row">
-            <ul class="list-unstyled">
-                <% movies.forEach((movie)=>{%>
-                    <div class="movies-box">
-                        <div class="col-4 col-md-4 col-lg-3" align="center">
-                            <li class="media">
-                                <a href="/movie/<%= movie.id %>">
-                                    <img class="mr-3" src="https://image.tmdb.org/t/p/w500/<%= movie.backdrop_path %>" alt="Generic placeholder image" />
-                                </a>
-                                <div class="media-body">
-                                    <h5 class="mt-0 mb-1">
-                                        <%= movie.title %>
-                                    </h5>
-
-                                </div>
-                            </li>
-                        </div>
+                            </div>
+                        </li>
                     </div>
-                    <% }) %>
-            </ul>
-        </div>
+                </div>
+                <% }) %>
+        </ul>
+    </div>
 
 </div>

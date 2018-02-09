@@ -8,7 +8,7 @@ request('https://api.themoviedb.org/3/discover/movie?api_key=c254f174e3ef7bd559e
 
 
   router.get('/', (req, res) => {
-    let message = "";
+    let message = movies.length;
     res.render('index', { 
       movies: movies, 
       message: message });
