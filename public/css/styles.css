@@ -1,2 +1,50 @@
-h1 {
-  font-family: helvetica; }
+body {
+  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif; }
+
+hr {
+  max-width: 30%;
+  border-width: 3px;
+  border-color: #F05F40; }
+
+hr.light {
+  border-color: #fff; }
+
+a {
+  color: #F05F40;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s; }
+
+a:hover {
+  color: #f05f40; }
+
+.title {
+  text-align: center; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
+
+.bg-primary {
+  background-color: #F05F40 !important; }
+
+.bg-dark {
+  background-color: #212529 !important; }
+
+.text-faded {
+  color: rgba(255, 255, 255, 0.7); }
+
+.message {
+  font-size: 10rem;
+  text-align: center; }
+
+.box {
+  padding: 5rem;
+  margin: 5rem 0; }
+
+.movie-box {
+  margin: 5rem 0; }

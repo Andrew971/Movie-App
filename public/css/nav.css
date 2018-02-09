@@ -8,6 +8,7 @@
 
 .title {
   display: inline-block;
+  text-shadow: 1px 3px 60px #dff2ff;
   margin: 1rem; }
 
 .brand_name {
