@@ -1,7 +1,7 @@
 .nav_bar{
     width:100%;
     color:white;
-    background:hsla(197, 75%, 48%, 0.87);
+    background:$primary-color;
     height:auto;
     position:absolute;
     top:0;
@@ -20,13 +20,12 @@
     text-decoration:none;
     font-size:2.2em;
     text-transform: uppercase;
-   
+   &:hover{
+    text-decoration:none;
+    color:white;
+   }
  }
 
- .brand_name:hover{
-     text-decoration:none;
-     color:white;
- }
 
 //code for the search bar
 
@@ -35,70 +34,28 @@
     display: inline-block;
     margin-top: 1em;
     width:30rem;
+    .search-query {
+        padding-right: 3px;
+        padding-right: 4px \9;
+        padding-left: 3px;
+        padding-left: 4px \9;
+        margin-bottom: 0;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        border-radius: 30px;
+    }
+    button {
+        border:0;
+        background: none;
+        padding: 2px 5px;
+        margin-top: 2px;
+        position: relative;
+        left: -40px;
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        color:$secondary-color;
+    }
+    
 }
-
-#search-input .search-query {
-    padding-right: 3px;
-    padding-right: 4px \9;
-    padding-left: 3px;
-    padding-left: 4px \9;
-    margin-bottom: 0;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    border-radius: 30px;
-}
-
-#search-input button {
-    border:0;
-    background: none;
-    padding: 2px 5px;
-    margin-top: 2px;
-    position: relative;
-    left: -40px;
-    margin-bottom: 0;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    color:#D9230F;
-}
-
-
-//code for the menu (if menu)
-
-// .dropdown_content_lg{
-//     display: inline-block;
-//     right:0;
-// }
-
-// .menu{
-// float:right
-// }
-// li {
-//     display: inline-block;
-
-// }
-// .menu:hover{
-//     background-color: skyblue;
-//     text-decoration: none;
-//     color: white;
-//     height:100%;
-
-// }
-// ul{
-//     margin:1em;
-//     padding:0;
-//     height: auto;
-// }
-
-
-// .link {
-//     text-decoration: none;
-//     color: white;
-//     text-align: center;
-//     font-size:1.9em;
-// }
-
-// .link:hover{
-//     text-decoration: none;
-//     color: white;
-// }

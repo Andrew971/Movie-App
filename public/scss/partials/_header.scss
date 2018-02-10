@@ -7,9 +7,6 @@
         padding-top: 15rem;
         padding-bottom: calc(10rem - 56px);
         background-position: center center;
-        /*-webkit-background-size: cover;
-        -moz-background-size: cover;
-      -o-background-size: cover;*/
       background-size: cover; 
       color: white;
       h1 {
@@ -18,7 +15,7 @@
       }
    
     .title-page{
-      text-shadow: 1px 3px 60px rgb(223, 242, 255);
+      text-shadow: $shadow-color;
     }
 
 

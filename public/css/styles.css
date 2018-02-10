@@ -1,25 +1,12 @@
 body {
-  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif; }
+  font-family: "Merriweather", "Helvetica Neue", Arial, sans-serif; }
 
 hr {
   max-width: 30%;
   border-width: 3px;
   border-color: #F05F40; }
-
-hr.light {
-  border-color: #fff; }
-
-a {
-  color: #F05F40;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  transition: all 0.2s; }
-
-a:hover {
-  color: #f05f40; }
-
-.title {
-  text-align: center; }
+  hr .light {
+    border-color: #fff; }
 
 h1,
 h2,
@@ -27,16 +14,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif; }
 
-.bg-primary {
-  background-color: #F05F40 !important; }
-
-.bg-dark {
-  background-color: #212529 !important; }
-
-.text-faded {
-  color: rgba(255, 255, 255, 0.7); }
+.title {
+  text-align: center; }
 
 .message {
   font-size: 10rem;
@@ -45,7 +26,7 @@ h6 {
 .nav_bar {
   width: 100%;
   color: white;
-  background: rgba(31, 162, 214, 0.87);
+  background: rgba(31, 162, 214, 0.897);
   height: auto;
   position: absolute;
   top: 0; }
@@ -60,38 +41,35 @@ h6 {
   text-decoration: none;
   font-size: 2.2em;
   text-transform: uppercase; }
-
-.brand_name:hover {
-  text-decoration: none;
-  color: white; }
+  .brand_name:hover {
+    text-decoration: none;
+    color: white; }
 
 #search-input {
   display: inline-block;
   margin-top: 1em;
   width: 30rem; }
-
-#search-input .search-query {
-  padding-right: 3px;
-  padding-right: 4px \9;
-  padding-left: 3px;
-  padding-left: 4px \9;
-  margin-bottom: 0;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px; }
-
-#search-input button {
-  border: 0;
-  background: none;
-  padding: 2px 5px;
-  margin-top: 2px;
-  position: relative;
-  left: -40px;
-  margin-bottom: 0;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  color: #D9230F; }
+  #search-input .search-query {
+    padding-right: 3px;
+    padding-right: 4px \9;
+    padding-left: 3px;
+    padding-left: 4px \9;
+    margin-bottom: 0;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px; }
+  #search-input button {
+    border: 0;
+    background: none;
+    padding: 2px 5px;
+    margin-top: 2px;
+    position: relative;
+    left: -40px;
+    margin-bottom: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: #F05F40; }
 
 .header {
   padding-right: 4em;
@@ -102,9 +80,6 @@ h6 {
   padding-top: 15rem;
   padding-bottom: calc(10rem - 56px);
   background-position: center center;
-  /*-webkit-background-size: cover;
-        -moz-background-size: cover;
-      -o-background-size: cover;*/
   background-size: cover;
   color: white; }
   .header h1 {
@@ -129,60 +104,51 @@ h6 {
 
 .col-md-6.bio-grid-left {
   width: 50%;
-  float: left;
-  /*display:inline-block;*/ }
+  float: left; }
 
 .col-md-6.bio-grid-right {
-  width: 50%;
-  /*float: right;*/
-  /*display:inline-block;*/ }
+  width: 50%; }
+  .col-md-6.bio-grid-right h3 {
+    font-size: 3em;
+    color: black;
+    letter-spacing: 2px;
+    font-family: 'Yanone Kaffeesatz', sans-serif; }
+  .col-md-6.bio-grid-right p {
+    color: black;
+    font-size: 1em;
+    line-height: 1.8em;
+    letter-spacing: 1px;
+    text-align: justify; }
 
 .bio-img {
   text-align: center;
   border: 5px solid rgba(238, 238, 238, 0.53);
   height: auto;
   padding: 2rem; }
+  .bio-img img {
+    width: 100%; }
+  .bio-img h3 {
+    color: black;
+    font-size: 2.8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Raleway', sans-serif; }
+  .bio-img p {
+    color: #ffc53e;
+    font-size: 1em;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
 
 .bio-text {
   text-align: center;
   margin: 2rem; }
+  .bio-text p {
+    width: 100%; }
 
 .bio-grids {
   padding: 5em 0 0 0; }
-
-.bio-img img {
-  width: 100%; }
-
-.bio-text p {
-  width: 100%; }
-
-.bio-img h3 {
-  color: black;
-  font-size: 2.8em;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-family: 'Raleway', sans-serif; }
-
-.bio-img p {
-  color: #ffc53e;
-  font-size: 1em;
-  line-height: 1.5em;
-  text-transform: uppercase;
-  letter-spacing: 2px; }
-
-.bio-grid-right h3 {
-  font-size: 3em;
-  color: black;
-  letter-spacing: 2px;
-  font-family: 'Yanone Kaffeesatz', sans-serif; }
-
-.bio-grid-right p {
-  color: black;
-  font-size: 1em;
-  line-height: 1.8em;
-  letter-spacing: 1px;
-  text-align: justify; }
 
 .footer {
   width: 100%;
