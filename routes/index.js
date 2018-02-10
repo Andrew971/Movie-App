@@ -6,7 +6,7 @@ const request = require('request');
 request('https://api.themoviedb.org/3/discover/movie?api_key=c254f174e3ef7bd559ed74294ff10031&language=en-US', (err, res, body) => {
   let data = JSON.parse(body)
   let movies = data.results
-  
+
 
   router.get('/', (req, res) => {
     let message = "";
@@ -18,14 +18,14 @@ request('https://api.themoviedb.org/3/discover/movie?api_key=c254f174e3ef7bd559e
 
 
   router.get('/movie/:movieId', (req, res, err) => {
-    let {movieId} = req.params
+    let { movieId } = req.params
     let found = movies.find(function (movie) {
       if (movie.id == movieId)
         return movie;
     })
-    res.render('movie', {movie: found});
+    res.render('movie', { movie: found });
 
-    if(err){
+    if (err) {
       res.render('error')
     }
 
@@ -41,8 +41,8 @@ request('https://api.themoviedb.org/3/discover/movie?api_key=c254f174e3ef7bd559e
       if (results.length == 0) {
         return "OOOuups !! No movies was found...";
       } else {
-        if(results.length>1)
-        return `${results.length} movies were found`
+        if (results.length > 1)
+          return `${results.length} movies were found`
         else {
           return `${results.length} movie was found`
 
@@ -53,7 +53,7 @@ request('https://api.themoviedb.org/3/discover/movie?api_key=c254f174e3ef7bd559e
     res.render('index', {
       movies: results,
       message: message
-        });
+    });
   })
 
 
