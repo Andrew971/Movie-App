@@ -39,7 +39,7 @@ request('https://api.themoviedb.org/3/discover/movie?api_key=c254f174e3ef7bd559e
 
     function NoMovie() {
       if (results.length == 0) {
-        return "OOOuups !! No movies was found...";
+        return "OOOuups !! No movie was found...";
       } else {
         if (results.length > 1)
           return `${results.length} movies were found`
